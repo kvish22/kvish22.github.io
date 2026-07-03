@@ -1,0 +1,305 @@
+:root {
+  --color-bg: #ffffff;
+  --color-bg-alt: #f6f7f5;
+  --color-text: #1f2420;
+  --color-muted: #6b7369;
+  --color-accent: #3a6b4f;
+  --color-border: #e3e6e1;
+  --max-width: 780px;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.1rem;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 0 0 20px;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin: 28px 0 12px;
+  color: var(--color-accent);
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+.muted {
+  color: var(--color-muted);
+  font-size: 0.9em;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(6px);
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  gap: 8px 16px;
+}
+
+.site-name {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.site-name:hover {
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  color: var(--color-muted);
+  font-size: 0.92rem;
+}
+
+.site-nav a:hover {
+  color: var(--color-accent);
+}
+
+/* Hero */
+.hero {
+  padding: 64px 0 40px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  margin-bottom: 4px;
+}
+
+.hero-meta {
+  color: var(--color-muted);
+  margin-bottom: 16px;
+}
+
+.hero-links a {
+  font-size: 0.95rem;
+}
+
+.sep {
+  color: var(--color-border);
+  margin: 0 8px;
+}
+
+/* Sections */
+.section {
+  padding: 48px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+.section.alt {
+  background: var(--color-bg-alt);
+}
+
+/* Research interests */
+.interest-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.interest-list li {
+  margin-bottom: 8px;
+}
+
+/* Education table */
+.edu-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.edu-table th, .edu-table td {
+  text-align: left;
+  padding: 10px 12px 10px 0;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.edu-table th {
+  color: var(--color-muted);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.phd-title {
+  margin-top: 16px;
+  font-size: 0.92rem;
+  color: var(--color-muted);
+}
+
+/* Experience timeline */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline li {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.timeline li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.timeline li:first-child {
+  padding-top: 0;
+}
+
+.role {
+  font-weight: 600;
+}
+
+.org {
+  color: var(--color-text);
+}
+
+.period {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.skill-group h3 {
+  margin-top: 0;
+}
+
+.skill-group p {
+  color: var(--color-text);
+}
+
+/* Publications */
+.pub-summary {
+  color: var(--color-muted);
+  margin-bottom: 8px;
+}
+
+.pub-list {
+  padding-left: 22px;
+  margin: 0;
+}
+
+.pub-list li {
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+}
+
+.note {
+  margin-top: 20px;
+}
+
+/* Plain lists */
+.plain-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plain-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.plain-list li:last-child {
+  border-bottom: none;
+}
+
+.society {
+  margin-top: 16px;
+}
+
+/* Footer */
+.site-footer {
+  padding: 32px 0;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero {
+    padding: 40px 0 28px;
+  }
+
+  .edu-table {
+    font-size: 0.85rem;
+  }
+}
